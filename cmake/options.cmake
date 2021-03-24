@@ -1,0 +1,7 @@
+# build library
+OPTION(LIBSTL_BUILD_LIB "Builds the libstl library" ON)
+MESSAGE(STATUS "LIBSTL_BUILD_LIB : ${LIBSTL_BUILD_LIB}")
+
+# build examples
+OPTION(LIBSTL_BUILD_EXAMPLES "Builds the libstl examples" OFF)
+MESSAGE(STATUS "LIBSTL_BUILD_EXAMPLES : ${LIBSTL_BUILD_EXAMPLES}")

@@ -1,0 +1,6 @@
+file(GLOB_RECURSE CORE_FILES "*.cpp")
+
+add_library(${PROJECT_NAME} SHARED ${CORE_FILES})
+
+set_source_files_properties(${CORE_FILES} PROPERTIES LANGUAGE CXX)
+set_target_properties(${PROJECT_NAME} PROPERTIES VERSION ${PROJECT_VERSION} LANGUAGE CXX)
